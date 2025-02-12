@@ -2,7 +2,7 @@ abstract class Computer {
     final void osInfo() {  // Final method (cannot be overridden)
         System.out.println("Operating System: Windows or macOS.");
     }
-}
+}   
 
 class Laptop extends Computer {
     // Cannot override osInfo() because it's final

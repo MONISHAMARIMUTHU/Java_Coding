@@ -37,7 +37,7 @@ class bankAccount{
 public class bankbalance{
     public static void main(String[] args) {
         bankAccount account=new bankAccount(500.0);
-        
+        //Method hiding - checks reference
         System.out.println("Current Balance: $" + account.getBalance());
 
         account.deposit(200);

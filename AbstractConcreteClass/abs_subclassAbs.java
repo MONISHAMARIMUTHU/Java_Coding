@@ -1,7 +1,7 @@
 abstract class Animal{
     abstract void bark(); //Abstract method (no implementation)
 
-    public void sleep(){  // Concrete method (has implementation)
+    void sleep(){  // Concrete method (has implementation)
         System.out.println("Animal is sleeping");
     }
 }
@@ -26,6 +26,10 @@ class Dog extends Mammal{
     void makesound(){
          System.out.println("Wowww");
     }
+    @Override
+    void sleep(){
+        System.out.println("Sleep");
+    }
 }
 
 
@@ -34,6 +38,8 @@ public class abs_subclassAbs{
         Animal myDog = new Dog(); // Allowed (using subclass)
         myDog.bark();
         myDog.sleep();
+        //myDog.makesound();
+        // myDog.walk();
         Mammal m1=new Dog();
         m1.walk();
         m1.bark();
