@@ -2,8 +2,14 @@ abstract class vehicle{
     String brand;
     // Constructor
     vehicle(String brand){
+        this();
         this.brand=brand;
         System.out.println(brand + " is created");
+        
+    }
+
+    vehicle(){
+        System.out.println("constructor->this");
     }
     abstract void start(); //Abstract Class with Multiple Abstract Methods
     abstract void brake(); 

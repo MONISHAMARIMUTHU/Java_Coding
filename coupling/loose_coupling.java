@@ -1,3 +1,5 @@
+package coupling;
+
 interface Engine {
     void start();
 }
@@ -10,13 +12,14 @@ class PetrolEngine implements Engine {
 }
 
 class ElectricEngine implements Engine {
+    @Override
     public void start() {
         System.out.println("Electric Engine started");
     }
 }
 
 class Car {
-    private Engine engine;
+    private final Engine engine;
 
     // Injecting dependency through constructor (Dependency Injection)
     Car(Engine engine) {
@@ -29,7 +32,7 @@ class Car {
     }
 }
 
-class loose_coupling {
+public class loose_coupling {
     public static void main(String[] args) {
         Engine engine = new PetrolEngine(); // Decoupling with abstraction
         Car car = new Car(engine);  // Injecting dependency
