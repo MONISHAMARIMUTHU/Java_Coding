@@ -4,9 +4,6 @@ class Demo {
         System.out.println("int: " + x);
     }
 
-    void show(Integer x) {
-        System.out.println("Integer: " + x);
-    }
 }
 
 public class ex2 {

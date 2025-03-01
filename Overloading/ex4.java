@@ -55,7 +55,7 @@ public class ex4 {
     }
     
     // 
-    static void m5(String s){
+    public static void m5(String s){
         System.out.println("m5 -> String");
     }
     
