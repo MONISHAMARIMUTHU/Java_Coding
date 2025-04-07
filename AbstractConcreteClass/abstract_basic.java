@@ -7,6 +7,9 @@ abstract class Animal{
     // static void sleep(){  // Concrete method (has implementation)
     //     System.out.println("Animal is sleeping");
     // }
+    void eat(){
+        System.err.println("Food");
+    }
 }
 
 // Subclass inheriting abstract class
@@ -18,6 +21,9 @@ class Dog extends Animal{
     @Override
     void sleep(){  //overriding method
         System.out.println("Dog is sleeping");
+    }
+    void sound(){
+        System.out.println("woahhh");
     }
     // //Method hiding - checks reference
     // static void sleep(){  
@@ -31,8 +37,12 @@ public class abstract_basic{
         Animal myDog = new Dog(); // Allowed (using subclass)
         myDog.bark();
         myDog.sleep();
+        myDog.eat();
+        //myDog.sound();
         Dog m1=new Dog();
         m1.sleep();
+        m1.sound();
+        m1.eat();
     }
 }
 

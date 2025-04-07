@@ -1,14 +1,14 @@
 abstract class vehicle{
     String brand;
     // Constructor
-    vehicle(String brand){
-        this();
+    vehicle(String brand){ //parameterized constructor
+        this(); // calls default constructor
         this.brand=brand;
         System.out.println(brand + " is created");
         
     }
 
-    vehicle(){
+    vehicle(){ //default constructor
         System.out.println("constructor->this");
     }
     abstract void start(); //Abstract Class with Multiple Abstract Methods

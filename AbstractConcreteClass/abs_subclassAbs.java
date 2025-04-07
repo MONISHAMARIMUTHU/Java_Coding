@@ -44,7 +44,7 @@ public class abs_subclassAbs{
         m1.walk();
         m1.bark();
         m1.sleep();
-        //m1.makesound() - not possible
+        //m1.makesound(); - not possible
         Dog m2= new Dog();
         m2.makesound();
         m2.sleep();
