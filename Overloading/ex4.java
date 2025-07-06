@@ -107,7 +107,7 @@ public class ex4 {
         m1(c);
         m1(p2); // method resolutin - by JC - based on "reference type" -> O/P: Parent
 
-        // overloadin across parent & child class
+        // overloading across parent & child class
         c.m6(0);
         c.m6(0f);
         c.m6((byte)0);
