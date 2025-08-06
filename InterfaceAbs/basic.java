@@ -1,6 +1,5 @@
 package InterfaceAbs;
 
-//package InterfaceAbs;
 // Defining an interface
 interface Animal {
     void makeSound();  // Abstract method (no body)

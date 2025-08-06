@@ -1,8 +1,6 @@
 package subarray;
 import java.util.*;
 public class PrimeTransform {
-
-
     // Check if a number is prime
     public static boolean isPrime(int num) {
         if (num <= 1) return false;

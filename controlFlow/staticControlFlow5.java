@@ -1,6 +1,6 @@
 package controlFlow;
 
-class Parent {
+class Parent12 {
     static int a = 10;
 
     static {
@@ -28,7 +28,7 @@ class Parent {
 }
 
 
-public class staticControlFlow5 extends Parent {
+public class staticControlFlow5 extends Parent12 {
         static int c = 100;
     
         static {

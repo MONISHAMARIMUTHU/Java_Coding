@@ -19,9 +19,9 @@ public class subsum {
 }
 
 // for (int i = 0; i < n; i++) {
-//             int contribution = arr[i] * (i + 1) * (n - i);
-//             totalSum += contribution;
-//         }
+//      int contribution = arr[i] * (i + 1) * (n - i);
+//      totalSum += contribution;
+// }
 
 // Find the sum of all subarrays
 // Input: [1, 2, 3]
