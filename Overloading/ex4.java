@@ -108,9 +108,9 @@ public class ex4 {
         m1(p2); // method resolutin - by JC - based on "reference type" -> O/P: Parent
 
         // overloading across parent & child class
-        c.m6(0);
-        c.m6(0f);
-        c.m6((byte)0);
+        c.m6(0);       //parent-int
+        c.m6(0f);       //child-float
+        c.m6((byte)0);      //parent-int
 
         // Overloading with var-args
         m6(5); // it can match both fixed & var-args argument, but fixed argument takes precedence
